@@ -21,7 +21,6 @@
 		DE57E2742CE4A55C00AB2320 /* DTIButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E10F2CE4A55C00AB2320 /* DTIButtonsCell.swift */; };
 		DE57E2752CE4A55C00AB2320 /* WorkoutTrainingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1DB2CE4A55C00AB2320 /* WorkoutTrainingMenuView.swift */; };
 		DE57E2762CE4A55C00AB2320 /* ODrillsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E14F2CE4A55C00AB2320 /* ODrillsTableView.swift */; };
-		DE57E2772CE4A55C00AB2320 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E0B52CE4A55C00AB2320 /* BranchManager.swift */; };
 		DE57E2782CE4A55C00AB2320 /* WorkoutTrainingQuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1D22CE4A55C00AB2320 /* WorkoutTrainingQuitViewController.swift */; };
 		DE57E2792CE4A55C00AB2320 /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E16D2CE4A55C00AB2320 /* PaygateView.swift */; };
 		DE57E27A2CE4A55C00AB2320 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1932CE4A55C00AB2320 /* ProfileMainView.swift */; };
@@ -110,7 +109,6 @@
 		DE57E2CD2CE4A55C00AB2320 /* ProfileCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1872CE4A55C00AB2320 /* ProfileCalendarView.swift */; };
 		DE57E2CE2CE4A55C00AB2320 /* DrillTrainingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E10C2CE4A55C00AB2320 /* DrillTrainingResultViewController.swift */; };
 		DE57E2CF2CE4A55C00AB2320 /* ProfileCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1892CE4A55C00AB2320 /* ProfileCalendarCell.swift */; };
-		DE57E2D02CE4A55C00AB2320 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E0B42CE4A55C00AB2320 /* AmplitudeManager.swift */; };
 		DE57E2D12CE4A55C00AB2320 /* GetWorkoutStepsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E2582CE4A55C00AB2320 /* GetWorkoutStepsResponse.swift */; };
 		DE57E2D22CE4A55C00AB2320 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E0D92CE4A55C00AB2320 /* PushNotificationsModel.swift */; };
 		DE57E2D32CE4A55C00AB2320 /* DrillTrainingInstructionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57E1022CE4A55C00AB2320 /* DrillTrainingInstructionScrollView.swift */; };
@@ -336,8 +334,6 @@
 		DE57E0AB2CE4A3E500AB2320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE57E0AC2CE4A3E500AB2320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE57E0AD2CE4A3E500AB2320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DE57E0B42CE4A55C00AB2320 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DE57E0B52CE4A55C00AB2320 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE57E0B62CE4A55C00AB2320 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DE57E0B92CE4A55C00AB2320 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DE57E0BA2CE4A55C00AB2320 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
@@ -725,8 +721,6 @@
 		DE57E0B82CE4A55C00AB2320 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DE57E0B42CE4A55C00AB2320 /* AmplitudeManager.swift */,
-				DE57E0B52CE4A55C00AB2320 /* BranchManager.swift */,
 				DE57E0B62CE4A55C00AB2320 /* FacebookManager.swift */,
 			);
 			path = Analytics;
@@ -2226,9 +2220,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Walking/Pods-Walking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Walking/Pods-Walking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2275,7 +2273,6 @@
 				DE57E2742CE4A55C00AB2320 /* DTIButtonsCell.swift in Sources */,
 				DE57E2752CE4A55C00AB2320 /* WorkoutTrainingMenuView.swift in Sources */,
 				DE57E2762CE4A55C00AB2320 /* ODrillsTableView.swift in Sources */,
-				DE57E2772CE4A55C00AB2320 /* BranchManager.swift in Sources */,
 				DE57E2782CE4A55C00AB2320 /* WorkoutTrainingQuitViewController.swift in Sources */,
 				DE57E2792CE4A55C00AB2320 /* PaygateView.swift in Sources */,
 				DE57E27A2CE4A55C00AB2320 /* ProfileMainView.swift in Sources */,
@@ -2364,7 +2361,6 @@
 				DE57E2CD2CE4A55C00AB2320 /* ProfileCalendarView.swift in Sources */,
 				DE57E2CE2CE4A55C00AB2320 /* DrillTrainingResultViewController.swift in Sources */,
 				DE57E2CF2CE4A55C00AB2320 /* ProfileCalendarCell.swift in Sources */,
-				DE57E2D02CE4A55C00AB2320 /* AmplitudeManager.swift in Sources */,
 				DE57E2D12CE4A55C00AB2320 /* GetWorkoutStepsResponse.swift in Sources */,
 				DE57E2D22CE4A55C00AB2320 /* PushNotificationsModel.swift in Sources */,
 				DE57E2D32CE4A55C00AB2320 /* DrillTrainingInstructionScrollView.swift in Sources */,
@@ -2602,7 +2598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z2WD4P9PA4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2617,7 +2613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = train.walking2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2640,7 +2636,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z2WD4P9PA4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2655,7 +2651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = train.walking2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
